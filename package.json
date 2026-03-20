@@ -1,6 +1,6 @@
 {
   "name": "open-rarity-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zero-dependency NFT rarity scoring using Information Content (IC) with Shannon entropy normalization",
   "keywords": [
     "nft",
