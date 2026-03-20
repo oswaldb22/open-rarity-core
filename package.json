@@ -1,7 +1,25 @@
 {
-  "name": "openrarity",
+  "name": "open-rarity-core",
   "version": "0.1.0",
   "description": "Zero-dependency NFT rarity scoring using Information Content (IC) with Shannon entropy normalization",
+  "keywords": [
+    "nft",
+    "rarity",
+    "openrarity",
+    "open-rarity",
+    "typescript",
+    "javascript",
+    "browser",
+    "ranking"
+  ],
+  "homepage": "https://github.com/oswaldb22/openrarityjs#readme",
+  "bugs": {
+    "url": "https://github.com/oswaldb22/openrarityjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oswaldb22/openrarityjs.git"
+  },
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -18,8 +36,12 @@
   ],
   "scripts": {
     "build": "tsup",
+    "prepublishOnly": "pnpm test && pnpm build",
     "test": "vitest run",
     "test:watch": "vitest"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "tsup": "^8.0.0",

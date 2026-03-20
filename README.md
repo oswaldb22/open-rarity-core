@@ -15,15 +15,15 @@ Scores NFT rarity using **Information Content (IC)** with Shannon entropy normal
 ## Install
 
 ```bash
-npm install openrarity
+npm install open-rarity-core
 # or
-pnpm add openrarity
+pnpm add open-rarity-core
 ```
 
 ## Quick start
 
 ```typescript
-import { rankCollection } from 'openrarity';
+import { rankCollection } from 'open-rarity-core';
 
 const ranked = rankCollection([
   { tokenId: '1', attributes: { hat: 'cap', shirt: 'blue' } },
@@ -67,7 +67,7 @@ const scores = scoreCollection(tokens);
 Use the `Collection` class and lower-level functions for full control.
 
 ```typescript
-import { Collection, scoreTokens, rankTokens } from 'openrarity';
+import { Collection, scoreTokens, rankTokens } from 'open-rarity-core';
 
 const collection = new Collection(tokens);
 
